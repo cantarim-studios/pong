@@ -15,3 +15,9 @@ LOVE_CONFIG = {
 MESSAGE = "Hello World!"
 
 PADDLE_SPEED = 200
+
+-- Controls
+P1_UP = "w"
+P1_DOWN = "s"
+P2_UP = "up"
+P2_DOWN = "down"
