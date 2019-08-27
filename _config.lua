@@ -13,3 +13,5 @@ LOVE_CONFIG = {
 }
 
 MESSAGE = "Hello World!"
+
+PADDLE_SPEED = 200
