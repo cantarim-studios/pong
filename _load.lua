@@ -8,6 +8,10 @@ function love.load()
   push:setupScreen(VIRTUAL_WIDTH, VIRTUAL_HEIGHT, WINDOW_WIDTH, WINDOW_HEIGHT, LOVE_CONFIG)
 
   player1 = {
+    controls = {
+      up = P1_UP,
+      down = P1_DOWN
+    },
     score = 0,
     width = 5,
     height = 20,
@@ -15,6 +19,10 @@ function love.load()
   }
 
   player2 = {
+    controls = {
+      up = P2_UP,
+      down = P2_DOWN
+    },
     score = 0,
     width = 5,
     height = 20,
