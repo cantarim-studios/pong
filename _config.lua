@@ -12,7 +12,7 @@ LOVE_CONFIG = {
   vsync = true
 }
 
-MESSAGE = "Hello World!"
+MESSAGE = "PRESS ENTER TO PONG"
 
 PADDLE_SPEED = 200
 
