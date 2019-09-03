@@ -11,8 +11,8 @@ function love.load()
 
   push:setupScreen(VIRTUAL_WIDTH, VIRTUAL_HEIGHT, WINDOW_WIDTH, WINDOW_HEIGHT, LOVE_CONFIG)
 
-  player1 = Paddle(5, 30, 5, 20, P1_UP, P1_DOWN)
-  player2 = Paddle(VIRTUAL_WIDTH - 10, VIRTUAL_HEIGHT - 30, 5, 20, P2_UP, P2_DOWN)
+  player1 = Paddle(5, 30, 5, 40, P1_UP, P1_DOWN)
+  player2 = Paddle(VIRTUAL_WIDTH - 10, VIRTUAL_HEIGHT - 30, 5, 40, P2_UP, P2_DOWN)
 
   ball = Ball(VIRTUAL_WIDTH / 2 - 2, VIRTUAL_HEIGHT / 2 - 2, 4, 4)
 
