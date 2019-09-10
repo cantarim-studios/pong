@@ -10,6 +10,12 @@ function love.load()
   scoreFont = love.graphics.newFont("assets/fonts/font.ttf", FONT_SIZE * 4)
   love.graphics.setFont(smallFont)
 
+  sounds = {
+    ["hit"] = love.audio.newSource("assets/sounds/hit.wav", "static"),
+    ["score"] = love.audio.newSource("assets/sounds/score.wav", "static"),
+    ["goal"] = love.audio.newSource("assets/sounds/goal.wav", "static")
+  }
+
   push:setupScreen(VIRTUAL_WIDTH, VIRTUAL_HEIGHT, WINDOW_WIDTH, WINDOW_HEIGHT, LOVE_CONFIG)
 
   player1 = Paddle(5, 30, 5, 20, P1_UP, P1_DOWN)
@@ -20,4 +26,8 @@ function love.load()
   servingPlayer = 1
 
   gameState = "start"
+end
+
+function love.resize(w, h)
+  push:resize(w, h)
 end
